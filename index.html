@@ -1,0 +1,18 @@
+<html>
+<title> Demo Page</title>
+<body> This is the demo content for my website. </body>
+
+<div id="tofetch"/>
+<script>
+var tofetch = document.getElementById("tofetch");
+
+fetch('http://aws-saa-s3-assets.s3-website.us-east-2.amazonaws.com/extra.html')
+.then((response) => {
+	return response.text();
+})
+.then((html) => {
+	tofetch.innerHTML = html
+});
+
+</script>
+</html>

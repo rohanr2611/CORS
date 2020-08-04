@@ -1,0 +1,10 @@
+<CORSConfiguration>
+ <CORSRule>
+   <AllowedOrigin>http://www.example.com</AllowedOrigin>
+   <AllowedMethod>GET</AllowedMethod>
+
+   <AllowedHeader>Authorization</AllowedHeader>
+  <MaxAgeSeconds>3000</MaxAgeSeconds>
+
+ </CORSRule>
+</CORSConfiguration>
